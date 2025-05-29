@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume Management</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Resume Manager</a>
+        <div>
+          <a href="{{ url_for('add_resume') }}" class="btn btn-light"
+            >Add New Resume</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">{% block content %}{% endblock %}</div>
+  </body>
+</html>
