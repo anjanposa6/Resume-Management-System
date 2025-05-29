@@ -1,0 +1,12 @@
+body {
+  background: #f8f9fa;
+}
+
+table th,
+table td {
+  vertical-align: middle !important;
+}
+
+textarea {
+  resize: vertical;
+}
